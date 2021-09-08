@@ -1,0 +1,24 @@
+{
+  "name": "film-app-mongo",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000f\u0000i\u0000l\u0000m\u0000-\u0000a\u0000p\u0000p\u0000-\u0000m\u0000o\u0000n\u0000g\u0000o\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jef1993/film-app-mongo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jef1993/film-app-mongo/issues"
+  },
+  "homepage": "https://github.com/jef1993/film-app-mongo#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "mongodb": "^4.1.1"
+  }
+}
