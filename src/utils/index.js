@@ -3,8 +3,8 @@ exports.addMovie = async (collection, dataObj) => {
   console.log(add);
 };
 
-exports.listMovies = async (collection) => {
-  const findList = await collection.find({}).toArray();
+exports.listMovies = async (collection, query) => {
+  const findList = await collection.find(query).toArray();
   console.log(findList);
 };
 

@@ -19,8 +19,13 @@ const app = async () => {
     await connection(addMovie, newMovie);
   }
 
-  if (command[0] === "list") {
-    await connection(listMovies);
+  if (command[0] === "find") {
+    const query = {};
+
+    for (let i = 1; i < command.length; i += 2) {
+      query[command[i]] = command[i + 1];
+    }
+    await connection(listMovies, query);
   }
 
   if (command[0] === "update") {
@@ -38,9 +43,10 @@ const app = async () => {
   }
 
   if (command[0] === "delete") {
-    const query = {
-      [command[1]]: command[2],
-    };
+    const query = {};
+    for (let i = 1; i < command.length; i += 2) {
+      query[command[i]] = command[i + 1];
+    }
     await connection(deleteMovie, query);
   }
 
